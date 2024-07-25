@@ -100,8 +100,8 @@ public class BasePage {
 		dropDown.selectByIndex(index);
 	}
 
-	public void selectFromDropDownByValue(By byLocator, String day) {
+	public void selectFromDropDownByValue(By byLocator, String value) {
 		Select dropDown = new Select(driver.findElement(byLocator));
-		dropDown.selectByValue(day);
+		dropDown.selectByValue(value);
 	}
 }
