@@ -1,6 +1,7 @@
 package pages;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -33,12 +34,13 @@ public class P08_Clothing extends BasePage {
 			String originalPrice = price.getText();
 			sortedPrices.add(cleanThePrice(originalPrice));
 		}
-		 Collections.sort(sortedPrices);
+	 Collections.sort(sortedPrices);
 		return sortedPrices;
 	}
 
-	public P08_Clothing sortByPrice() {
+	public P08_Clothing sortByPrice() throws InterruptedException {
 		selectFromDropDownByVisibleText(this.sortDropDown, "Price: Low to High");
+		Thread.sleep(2000);
 		return this;
 	}
 
