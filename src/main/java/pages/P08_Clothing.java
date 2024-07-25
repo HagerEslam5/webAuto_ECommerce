@@ -33,6 +33,7 @@ public class P08_Clothing extends BasePage {
 			String originalPrice = price.getText();
 			sortedPrices.add(cleanThePrice(originalPrice));
 		}
+		 Collections.sort(sortedPrices);
 		return sortedPrices;
 	}
 
