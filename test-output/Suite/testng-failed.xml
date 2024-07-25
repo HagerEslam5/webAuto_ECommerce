@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="bases.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.T01_Regirstration">
+        <methods>
+          <include name="generateData"/>
+          <include name="setUp"/>
+          <include name="TestRegistration_P" invocation-numbers="0 1 2"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.T01_Regirstration -->
+      <class name="tests.T03_ForgotPassword">
+        <methods>
+          <include name="generateData"/>
+          <include name="setUp"/>
+          <include name="TestPasswordRecovering_P"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.T03_ForgotPassword -->
+      <class name="tests.T02_Login">
+        <methods>
+          <include name="generateData"/>
+          <include name="setUp"/>
+          <include name="TestLogin_P"/>
+          <include name="TestInvalidPasswordLogin_N"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.T02_Login -->
+      <class name="tests.T04_ChangePassword">
+        <methods>
+          <include name="generateData"/>
+          <include name="TestPasswordChange_N"/>
+          <include name="setUp"/>
+          <include name="TestPasswordChange_P"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.T04_ChangePassword -->
+      <class name="tests.T10CheckOut_e2e">
+        <methods>
+          <include name="generateData"/>
+          <include name="chequeCheckOutTest"/>
+          <include name="logOut"/>
+          <include name="checkout"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="cerditCheckOutTest"/>
+        </methods>
+      </class> <!-- tests.T10CheckOut_e2e -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

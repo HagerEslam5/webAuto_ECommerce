@@ -1,0 +1,7 @@
+bases\BaseTest.class
+bases\Listeners.class
+bases\BaseTest$1.class
+tests\T04_ChangePassword.class
+tests\T01_Regirstration.class
+bases\RetryFailures.class
+tests\T02_Login.class

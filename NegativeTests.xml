@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="bases.Listenrs"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="Negative" />
+			</run>
+		</groups>
+		<classes>
+			<class name="tests.T01_Regirstration" />
+			<class name="tests.T02_Login" />
+			<class name="tests.T03_ForgotPassword" />
+			<class name="tests.T04_ChangePassword" />
+			<class name="tests.T05_Search" />
+			<class name="tests.T06_RandomFiterTest" />
+			<class name="tests.T07_ShoppingCart" />
+			<class name="tests.T08_SortItems" />
+			<class name="tests.T09_WishList" />
+			<class name="tests.T10CheckOut_e2e" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

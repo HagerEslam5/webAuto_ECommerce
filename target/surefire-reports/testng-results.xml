@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-25T10:17:07 EEST" name="Suite" finished-at="2024-07-25T10:18:52 EEST" duration-ms="104957">
+    <groups>
+      <group name="Negative">
+        <method signature="T04_ChangePassword.TestPasswordChange_N()[pri:1, instance:tests.T04_ChangePassword@39655d3e]" name="TestPasswordChange_N" class="tests.T04_ChangePassword"/>
+        <method signature="T01_Regirstration.testMissingFirstName_N()[pri:2, instance:tests.T01_Regirstration@42039326]" name="testMissingFirstName_N" class="tests.T01_Regirstration"/>
+        <method signature="T02_Login.TestInvalidPasswordLogin_N()[pri:2, instance:tests.T02_Login@22356acd]" name="TestInvalidPasswordLogin_N" class="tests.T02_Login"/>
+        <method signature="T03_ForgotPassword.TestPasswordRecovering_N()[pri:2, instance:tests.T03_ForgotPassword@386f0da3]" name="TestPasswordRecovering_N" class="tests.T03_ForgotPassword"/>
+        <method signature="T01_Regirstration.testMissingEmail_N()[pri:3, instance:tests.T01_Regirstration@42039326]" name="testMissingEmail_N" class="tests.T01_Regirstration"/>
+        <method signature="T02_Login.TestInvalidEmailLogin_N()[pri:3, instance:tests.T02_Login@22356acd]" name="TestInvalidEmailLogin_N" class="tests.T02_Login"/>
+        <method signature="T01_Regirstration.testMisMatchingPasswords_N()[pri:4, instance:tests.T01_Regirstration@42039326]" name="testMisMatchingPasswords_N" class="tests.T01_Regirstration"/>
+      </group> <!-- Negative -->
+    </groups>
+    <test started-at="2024-07-25T10:17:07 EEST" name="Test" finished-at="2024-07-25T10:18:52 EEST" duration-ms="104957">
+      <class name="tests.T05_Search">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T05_Search@34f22f9d]" started-at="2024-07-25T10:17:47 EEST" name="setUp" finished-at="2024-07-25T10:17:52 EEST" duration-ms="4407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchByProductName()[pri:1, instance:tests.T05_Search@34f22f9d]" started-at="2024-07-25T10:17:52 EEST" name="testSearchByProductName" finished-at="2024-07-25T10:17:53 EEST" duration-ms="1551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchByProductName -->
+        <test-method signature="testSearchByAutoSuggs()[pri:2, instance:tests.T05_Search@34f22f9d]" started-at="2024-07-25T10:17:53 EEST" name="testSearchByAutoSuggs" finished-at="2024-07-25T10:17:55 EEST" duration-ms="1610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchByAutoSuggs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T05_Search@34f22f9d]" started-at="2024-07-25T10:17:55 EEST" name="tearDown" finished-at="2024-07-25T10:17:55 EEST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.T05_Search -->
+      <class name="tests.T07_ShoppingCart">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T07_ShoppingCart@7dda48d9]" started-at="2024-07-25T10:17:59 EEST" name="setUp" finished-at="2024-07-25T10:18:03 EEST" duration-ms="4138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddProductsToShoppingCart()[pri:1, instance:tests.T07_ShoppingCart@7dda48d9]" started-at="2024-07-25T10:18:03 EEST" name="testAddProductsToShoppingCart" finished-at="2024-07-25T10:18:10 EEST" duration-ms="6504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProductsToShoppingCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T07_ShoppingCart@7dda48d9]" started-at="2024-07-25T10:18:10 EEST" name="tearDown" finished-at="2024-07-25T10:18:10 EEST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.T07_ShoppingCart -->
+      <class name="tests.T04_ChangePassword">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T04_ChangePassword@39655d3e]" started-at="2024-07-25T10:17:36 EEST" name="setUp" finished-at="2024-07-25T10:17:40 EEST" duration-ms="3076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="generateData()[pri:0, instance:tests.T04_ChangePassword@39655d3e]" started-at="2024-07-25T10:17:40 EEST" name="generateData" finished-at="2024-07-25T10:17:40 EEST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateData -->
+        <test-method signature="TestPasswordChange_N()[pri:1, instance:tests.T04_ChangePassword@39655d3e]" started-at="2024-07-25T10:17:40 EEST" name="TestPasswordChange_N" finished-at="2024-07-25T10:17:43 EEST" duration-ms="3790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestPasswordChange_N -->
+        <test-method signature="TestPasswordChange_P()[pri:2, instance:tests.T04_ChangePassword@39655d3e]" started-at="2024-07-25T10:17:43 EEST" name="TestPasswordChange_P" finished-at="2024-07-25T10:17:47 EEST" duration-ms="3733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestPasswordChange_P -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T04_ChangePassword@39655d3e]" started-at="2024-07-25T10:17:47 EEST" name="tearDown" finished-at="2024-07-25T10:17:47 EEST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.T04_ChangePassword -->
+      <class name="tests.T10CheckOut_e2e">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T10CheckOut_e2e@49d3c823]" started-at="2024-07-25T10:18:22 EEST" name="setUp" finished-at="2024-07-25T10:18:29 EEST" duration-ms="6778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="generateData()[pri:0, instance:tests.T10CheckOut_e2e@49d3c823]" started-at="2024-07-25T10:18:29 EEST" name="generateData" finished-at="2024-07-25T10:18:29 EEST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateData -->
+        <test-method is-config="true" signature="checkout()[pri:0, instance:tests.T10CheckOut_e2e@49d3c823]" started-at="2024-07-25T10:18:29 EEST" name="checkout" finished-at="2024-07-25T10:18:38 EEST" duration-ms="8482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+        <test-method signature="chequeCheckOutTest()[pri:1, instance:tests.T10CheckOut_e2e@49d3c823]" started-at="2024-07-25T10:18:38 EEST" name="chequeCheckOutTest" finished-at="2024-07-25T10:18:40 EEST" duration-ms="2043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chequeCheckOutTest -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:tests.T10CheckOut_e2e@49d3c823]" started-at="2024-07-25T10:18:40 EEST" name="logOut" finished-at="2024-07-25T10:18:41 EEST" duration-ms="847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="checkout()[pri:0, instance:tests.T10CheckOut_e2e@49d3c823]" started-at="2024-07-25T10:18:41 EEST" name="checkout" finished-at="2024-07-25T10:18:48 EEST" duration-ms="7655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+        <test-method signature="cerditCheckOutTest()[pri:2, instance:tests.T10CheckOut_e2e@49d3c823]" started-at="2024-07-25T10:18:48 EEST" name="cerditCheckOutTest" finished-at="2024-07-25T10:18:51 EEST" duration-ms="2401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cerditCheckOutTest -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:tests.T10CheckOut_e2e@49d3c823]" started-at="2024-07-25T10:18:51 EEST" name="logOut" finished-at="2024-07-25T10:18:51 EEST" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T10CheckOut_e2e@49d3c823]" started-at="2024-07-25T10:18:51 EEST" name="tearDown" finished-at="2024-07-25T10:18:52 EEST" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.T10CheckOut_e2e -->
+      <class name="tests.T06_RandomFiterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T06_RandomFiterTest@3d1848cc]" started-at="2024-07-25T10:17:55 EEST" name="setUp" finished-at="2024-07-25T10:17:58 EEST" duration-ms="3100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRandomColorFilter()[pri:1, instance:tests.T06_RandomFiterTest@3d1848cc]" started-at="2024-07-25T10:17:58 EEST" name="testRandomColorFilter" finished-at="2024-07-25T10:17:59 EEST" duration-ms="982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRandomColorFilter -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T06_RandomFiterTest@3d1848cc]" started-at="2024-07-25T10:17:59 EEST" name="tearDown" finished-at="2024-07-25T10:17:59 EEST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.T06_RandomFiterTest -->
+      <class name="tests.T02_Login">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T02_Login@22356acd]" started-at="2024-07-25T10:17:21 EEST" name="setUp" finished-at="2024-07-25T10:17:23 EEST" duration-ms="2537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="generateData()[pri:0, instance:tests.T02_Login@22356acd]" started-at="2024-07-25T10:17:23 EEST" name="generateData" finished-at="2024-07-25T10:17:24 EEST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateData -->
+        <test-method signature="TestLogin_P()[pri:1, instance:tests.T02_Login@22356acd]" started-at="2024-07-25T10:17:24 EEST" name="TestLogin_P" finished-at="2024-07-25T10:17:26 EEST" duration-ms="2470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestLogin_P -->
+        <test-method signature="TestInvalidPasswordLogin_N()[pri:2, instance:tests.T02_Login@22356acd]" started-at="2024-07-25T10:17:26 EEST" name="TestInvalidPasswordLogin_N" finished-at="2024-07-25T10:17:27 EEST" duration-ms="1073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestInvalidPasswordLogin_N -->
+        <test-method signature="TestInvalidEmailLogin_N()[pri:3, instance:tests.T02_Login@22356acd]" started-at="2024-07-25T10:17:27 EEST" name="TestInvalidEmailLogin_N" finished-at="2024-07-25T10:17:28 EEST" duration-ms="938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestInvalidEmailLogin_N -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T02_Login@22356acd]" started-at="2024-07-25T10:17:28 EEST" name="tearDown" finished-at="2024-07-25T10:17:29 EEST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.T02_Login -->
+      <class name="tests.T03_ForgotPassword">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T03_ForgotPassword@386f0da3]" started-at="2024-07-25T10:17:29 EEST" name="setUp" finished-at="2024-07-25T10:17:33 EEST" duration-ms="4245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="generateData()[pri:0, instance:tests.T03_ForgotPassword@386f0da3]" started-at="2024-07-25T10:17:33 EEST" name="generateData" finished-at="2024-07-25T10:17:33 EEST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateData -->
+        <test-method signature="TestPasswordRecovering_P()[pri:1, instance:tests.T03_ForgotPassword@386f0da3]" started-at="2024-07-25T10:17:33 EEST" name="TestPasswordRecovering_P" finished-at="2024-07-25T10:17:35 EEST" duration-ms="1880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestPasswordRecovering_P -->
+        <test-method signature="TestPasswordRecovering_N()[pri:2, instance:tests.T03_ForgotPassword@386f0da3]" started-at="2024-07-25T10:17:35 EEST" name="TestPasswordRecovering_N" finished-at="2024-07-25T10:17:36 EEST" duration-ms="1546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestPasswordRecovering_N -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T03_ForgotPassword@386f0da3]" started-at="2024-07-25T10:17:36 EEST" name="tearDown" finished-at="2024-07-25T10:17:36 EEST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.T03_ForgotPassword -->
+      <class name="tests.T01_Regirstration">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T01_Regirstration@42039326]" started-at="2024-07-25T10:17:07 EEST" name="setUp" finished-at="2024-07-25T10:17:10 EEST" duration-ms="3386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="generateData()[pri:0, instance:tests.T01_Regirstration@42039326]" started-at="2024-07-25T10:17:10 EEST" name="generateData" finished-at="2024-07-25T10:17:10 EEST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateData -->
+        <test-method signature="TestRegistration_P(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.T01_Regirstration@42039326]" started-at="2024-07-25T10:17:11 EEST" name="TestRegistration_P" data-provider="getData" finished-at="2024-07-25T10:17:14 EEST" duration-ms="2985" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sara]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ali]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1994]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[saralli5534@gmail.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[microsoft]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[lODyt66]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestRegistration_P -->
+        <test-method signature="TestRegistration_P(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.T01_Regirstration@42039326]" started-at="2024-07-25T10:17:14 EEST" name="TestRegistration_P" data-provider="getData" finished-at="2024-07-25T10:17:16 EEST" duration-ms="2126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mohamed]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ahmed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1992]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[mmohamedahmed3438@gmail.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[google]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[nJuTG66]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestRegistration_P -->
+        <test-method signature="TestRegistration_P(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.T01_Regirstration@42039326]" started-at="2024-07-25T10:17:16 EEST" name="TestRegistration_P" data-provider="getData" finished-at="2024-07-25T10:17:18 EEST" duration-ms="2315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[farid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mohamed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1991]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[farridmohamed35456@gmail.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[twittwe]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[hU65Fv5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestRegistration_P -->
+        <test-method signature="testMissingFirstName_N()[pri:2, instance:tests.T01_Regirstration@42039326]" started-at="2024-07-25T10:17:18 EEST" name="testMissingFirstName_N" finished-at="2024-07-25T10:17:19 EEST" duration-ms="890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMissingFirstName_N -->
+        <test-method signature="testMissingEmail_N()[pri:3, instance:tests.T01_Regirstration@42039326]" started-at="2024-07-25T10:17:19 EEST" name="testMissingEmail_N" finished-at="2024-07-25T10:17:20 EEST" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMissingEmail_N -->
+        <test-method signature="testMisMatchingPasswords_N()[pri:4, instance:tests.T01_Regirstration@42039326]" started-at="2024-07-25T10:17:20 EEST" name="testMisMatchingPasswords_N" finished-at="2024-07-25T10:17:21 EEST" duration-ms="928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMisMatchingPasswords_N -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T01_Regirstration@42039326]" started-at="2024-07-25T10:17:21 EEST" name="tearDown" finished-at="2024-07-25T10:17:21 EEST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.T01_Regirstration -->
+      <class name="tests.T09_WishList">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T09_WishList@4b6e2263]" started-at="2024-07-25T10:18:15 EEST" name="setUp" finished-at="2024-07-25T10:18:19 EEST" duration-ms="4182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addProdToWishListTest()[pri:1, instance:tests.T09_WishList@4b6e2263]" started-at="2024-07-25T10:18:19 EEST" name="addProdToWishListTest" finished-at="2024-07-25T10:18:22 EEST" duration-ms="3208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProdToWishListTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T09_WishList@4b6e2263]" started-at="2024-07-25T10:18:22 EEST" name="tearDown" finished-at="2024-07-25T10:18:22 EEST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.T09_WishList -->
+      <class name="tests.T08_SortItems">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.T08_SortItems@6e4566f1]" started-at="2024-07-25T10:18:10 EEST" name="setUp" finished-at="2024-07-25T10:18:14 EEST" duration-ms="3352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="sortByPriceTest()[pri:1, instance:tests.T08_SortItems@6e4566f1]" started-at="2024-07-25T10:18:14 EEST" name="sortByPriceTest" finished-at="2024-07-25T10:18:15 EEST" duration-ms="1179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortByPriceTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.T08_SortItems@6e4566f1]" started-at="2024-07-25T10:18:15 EEST" name="tearDown" finished-at="2024-07-25T10:18:15 EEST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.T08_SortItems -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

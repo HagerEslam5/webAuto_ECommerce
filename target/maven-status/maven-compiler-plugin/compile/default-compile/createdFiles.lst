@@ -1,0 +1,6 @@
+pages\P04_ChangePassword.class
+bases\BasePage.class
+pages\HomePage.class
+resources\ExtentReporterNG.class
+pages\P01_Registration.class
+pages\P02_Login.class

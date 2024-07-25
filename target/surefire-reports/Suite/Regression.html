@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>TestNG:  Regression</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 30 15:01:54 EEST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>36 seconds (36731 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.T05_Cart.addProdToCart()'><b>addProdToCart</b><br>Test class: tests.T05_Cart</td>
+<td></td>
+<td>0</td>
+<td>tests.T05_Cart@e70f13a</td></tr>
+<tr>
+<td title='tests.T05_Cart.searchByProdName()'><b>searchByProdName</b><br>Test class: tests.T05_Cart</td>
+<td></td>
+<td>0</td>
+<td>tests.T05_Cart@e70f13a</td></tr>
+<tr>
+<td title='tests.T03_Search.searchByProdName()'><b>searchByProdName</b><br>Test class: tests.T03_Search</td>
+<td></td>
+<td>0</td>
+<td>tests.T03_Search@50d13246</td></tr>
+<tr>
+<td title='tests.T05_Cart.verifyProdAddedToCart()'><b>verifyProdAddedToCart</b><br>Test class: tests.T05_Cart</td>
+<td></td>
+<td>1</td>
+<td>tests.T05_Cart@e70f13a</td></tr>
+<tr>
+<td title='tests.T02_Login.testLogin()'><b>testLogin</b><br>Test class: tests.T02_Login<br>Parameters: {password=H!Uha2k84XByJA, fName=mohamed, month=6, Lname=ahmed, year=1990, company=google, day=1, email=mohamedahmed292@gmail.com}</td>
+<td></td>
+<td>1</td>
+<td>tests.T02_Login@ab7395e</td></tr>
+<tr>
+<td title='tests.T02_Login.register()'><b>register</b><br>Test class: tests.T02_Login<br>Parameters: {password=H!Uha2k84XByJA, fName=mohamed, month=6, Lname=ahmed, year=1990, company=google, day=1, email=mohamedahmed292@gmail.com}</td>
+<td></td>
+<td>3</td>
+<td>tests.T02_Login@ab7395e</td></tr>
+<tr>
+<td title='tests.T04_ChangePassword.login()'><b>login</b><br>Test class: tests.T04_ChangePassword<br>Parameters: {password=H!Uha2k84XByJA, fName=farid, month=9, Lname=ahmed, year=1994, company=twitter, day=5, email=faaridahmed924@yahoo.com}</td>
+<td></td>
+<td>1</td>
+<td>tests.T04_ChangePassword@2bd08376</td></tr>
+<tr>
+<td title='tests.T01_Regirstration.register()'><b>register</b><br>Test class: tests.T01_Regirstration<br>Parameters: {password=H!Uha2k84XByJA, fName=sara, month=11, Lname=ali, year=1991, company=microsoft, day=3, email=saarali269@yahoo.com}</td>
+<td></td>
+<td>2</td>
+<td>tests.T01_Regirstration@524f3b3a</td></tr>
+<tr>
+<td title='tests.T03_Search.searchByAutoSuggs()'><b>searchByAutoSuggs</b><br>Test class: tests.T03_Search</td>
+<td></td>
+<td>1</td>
+<td>tests.T03_Search@50d13246</td></tr>
+<tr>
+<td title='tests.T04_ChangePassword.changePass()'><b>changePass</b><br>Test class: tests.T04_ChangePassword<br>Parameters: {password=H!Uha2k84XByJA, fName=farid, month=9, Lname=ahmed, year=1994, company=twitter, day=5, email=faaridahmed924@yahoo.com}</td>
+<td></td>
+<td>1</td>
+<td>tests.T04_ChangePassword@2bd08376</td></tr>
+<tr>
+<td title='tests.T04_ChangePassword.register()'><b>register</b><br>Test class: tests.T04_ChangePassword<br>Parameters: {password=H!Uha2k84XByJA, fName=farid, month=9, Lname=ahmed, year=1994, company=twitter, day=5, email=faaridahmed924@yahoo.com}</td>
+<td></td>
+<td>3</td>
+<td>tests.T04_ChangePassword@2bd08376</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 25 10:17:07 EEST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>104 seconds (104957 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.T04_ChangePassword.TestPasswordChange_N()'><b>TestPasswordChange_N</b><br>Test class: tests.T04_ChangePassword</td>
+<td></td>
+<td>3</td>
+<td>tests.T04_ChangePassword@39655d3e</td></tr>
+<tr>
+<td title='tests.T06_RandomFiterTest.testRandomColorFilter()'><b>testRandomColorFilter</b><br>Test class: tests.T06_RandomFiterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.T06_RandomFiterTest@3d1848cc</td></tr>
+<tr>
+<td title='tests.T10CheckOut_e2e.cerditCheckOutTest()'><b>cerditCheckOutTest</b><br>Test class: tests.T10CheckOut_e2e</td>
+<td></td>
+<td>2</td>
+<td>tests.T10CheckOut_e2e@49d3c823</td></tr>
+<tr>
+<td title='tests.T10CheckOut_e2e.chequeCheckOutTest()'><b>chequeCheckOutTest</b><br>Test class: tests.T10CheckOut_e2e</td>
+<td></td>
+<td>2</td>
+<td>tests.T10CheckOut_e2e@49d3c823</td></tr>
+<tr>
+<td title='tests.T01_Regirstration.testMisMatchingPasswords_N()'><b>testMisMatchingPasswords_N</b><br>Test class: tests.T01_Regirstration</td>
+<td></td>
+<td>0</td>
+<td>tests.T01_Regirstration@42039326</td></tr>
+<tr>
+<td title='tests.T05_Search.testSearchByAutoSuggs()'><b>testSearchByAutoSuggs</b><br>Test class: tests.T05_Search</td>
+<td></td>
+<td>1</td>
+<td>tests.T05_Search@34f22f9d</td></tr>
+<tr>
+<td title='tests.T01_Regirstration.testMissingEmail_N()'><b>testMissingEmail_N</b><br>Test class: tests.T01_Regirstration</td>
+<td></td>
+<td>0</td>
+<td>tests.T01_Regirstration@42039326</td></tr>
+<tr>
+<td title='tests.T09_WishList.addProdToWishListTest()'><b>addProdToWishListTest</b><br>Test class: tests.T09_WishList</td>
+<td></td>
+<td>3</td>
+<td>tests.T09_WishList@4b6e2263</td></tr>
+<tr>
+<td title='tests.T01_Regirstration.TestRegistration_P()'><b>TestRegistration_P</b><br>Test class: tests.T01_Regirstration<br>Parameters: mohamed, ahmed, 3, 5, 1992, mmohamedahmed3438@gmail.com, google, nJuTG66</td>
+<td></td>
+<td>2</td>
+<td>tests.T01_Regirstration@42039326</td></tr>
+<tr>
+<td title='tests.T02_Login.TestInvalidPasswordLogin_N()'><b>TestInvalidPasswordLogin_N</b><br>Test class: tests.T02_Login</td>
+<td></td>
+<td>1</td>
+<td>tests.T02_Login@22356acd</td></tr>
+<tr>
+<td title='tests.T04_ChangePassword.TestPasswordChange_P()'><b>TestPasswordChange_P</b><br>Test class: tests.T04_ChangePassword</td>
+<td></td>
+<td>3</td>
+<td>tests.T04_ChangePassword@39655d3e</td></tr>
+<tr>
+<td title='tests.T02_Login.TestInvalidEmailLogin_N()'><b>TestInvalidEmailLogin_N</b><br>Test class: tests.T02_Login</td>
+<td></td>
+<td>0</td>
+<td>tests.T02_Login@22356acd</td></tr>
+<tr>
+<td title='tests.T03_ForgotPassword.TestPasswordRecovering_P()'><b>TestPasswordRecovering_P</b><br>Test class: tests.T03_ForgotPassword</td>
+<td></td>
+<td>1</td>
+<td>tests.T03_ForgotPassword@386f0da3</td></tr>
+<tr>
+<td title='tests.T07_ShoppingCart.testAddProductsToShoppingCart()'><b>testAddProductsToShoppingCart</b><br>Test class: tests.T07_ShoppingCart</td>
+<td></td>
+<td>6</td>
+<td>tests.T07_ShoppingCart@7dda48d9</td></tr>
+<tr>
+<td title='tests.T05_Search.testSearchByProductName()'><b>testSearchByProductName</b><br>Test class: tests.T05_Search</td>
+<td></td>
+<td>1</td>
+<td>tests.T05_Search@34f22f9d</td></tr>
+<tr>
+<td title='tests.T02_Login.TestLogin_P()'><b>TestLogin_P</b><br>Test class: tests.T02_Login</td>
+<td></td>
+<td>2</td>
+<td>tests.T02_Login@22356acd</td></tr>
+<tr>
+<td title='tests.T03_ForgotPassword.TestPasswordRecovering_N()'><b>TestPasswordRecovering_N</b><br>Test class: tests.T03_ForgotPassword</td>
+<td></td>
+<td>1</td>
+<td>tests.T03_ForgotPassword@386f0da3</td></tr>
+<tr>
+<td title='tests.T01_Regirstration.testMissingFirstName_N()'><b>testMissingFirstName_N</b><br>Test class: tests.T01_Regirstration</td>
+<td></td>
+<td>0</td>
+<td>tests.T01_Regirstration@42039326</td></tr>
+<tr>
+<td title='tests.T08_SortItems.sortByPriceTest()'><b>sortByPriceTest</b><br>Test class: tests.T08_SortItems</td>
+<td></td>
+<td>1</td>
+<td>tests.T08_SortItems@6e4566f1</td></tr>
+<tr>
+<td title='tests.T01_Regirstration.TestRegistration_P()'><b>TestRegistration_P</b><br>Test class: tests.T01_Regirstration<br>Parameters: farid, mohamed, 4, 3, 1991, farridmohamed35456@gmail.com, twittwe, hU65Fv5</td>
+<td></td>
+<td>2</td>
+<td>tests.T01_Regirstration@42039326</td></tr>
+<tr>
+<td title='tests.T01_Regirstration.TestRegistration_P()'><b>TestRegistration_P</b><br>Test class: tests.T01_Regirstration<br>Parameters: sara, ali, 2, 7, 1994, saralli5534@gmail.com, microsoft, lODyt66</td>
+<td></td>
+<td>2</td>
+<td>tests.T01_Regirstration@42039326</td></tr>
+</table><p>
+</body>
+</html>
