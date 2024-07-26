@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
@@ -16,7 +15,6 @@ import data.FakeData;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
-import pages.P01_Registration;
 import pages.P02_Login;
 import pages.P04_ChangePassword;
 
@@ -28,6 +26,7 @@ public class T04_ChangePassword extends BaseTest {
 	private String validEmail;
 	private String validPass;
 	private String newPass = "Testautomation555";
+	private String pgTitle = "nopCommerce demo store";
 	FakeData fakeData = new FakeData();
 
 	@BeforeClass
@@ -53,6 +52,11 @@ public class T04_ChangePassword extends BaseTest {
 				.getSuccessMessg();
 		changePas.closeBar().logout();
 		Assert.assertEquals(succesMessg, "Password was changed");
+		
+		//SignIn using the new password
+		HomePage.goToLogin().enterEmail(validEmail).enterPassword(validPass).clickOnLoginBtn();
+		String title = loginObj.getPageTitle();
+		Assert.assertEquals(title, pgTitle);
 
 	}
 
