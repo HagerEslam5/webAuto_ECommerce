@@ -43,7 +43,6 @@ public class T04_ChangePassword extends BaseTest {
 
 	@Test(priority = 2)
 	@Description("Verify that user can change the password when the new password and confirmation match")
-	@Severity(SeverityLevel.MINOR)
 	public void TestPasswordChange_P() {
 		P02_Login loginObj = HomePage.goToLogin();
 		loginObj.enterEmail(validEmail).enterPassword(validPass).clickOnLoginBtn();
@@ -62,7 +61,6 @@ public class T04_ChangePassword extends BaseTest {
 
 	@Test(priority = 1, groups = { "Negative" })
 	@Description("Verify that user cannot change the password when the new password and confirmation do not match")
-	@Severity(SeverityLevel.MINOR)
 	public void TestPasswordChange_N() {
 		P02_Login loginObj = HomePage.goToLogin();
 		loginObj.enterEmail(validEmail).enterPassword(validPass).clickOnLoginBtn();
