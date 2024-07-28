@@ -38,7 +38,6 @@ public class T01_Regirstration extends BaseTest {
 
 	@Test(priority = 1, dataProvider = "getData")
 	@Description("Verify that a user can successfully register with valid data")
-	@Severity(SeverityLevel.CRITICAL)
 	public void TestRegistration_P(String firstName, String lastName, String day, String month, String year,
 			String email, String company, String password) {
 		String confirmationMessg = HomePage.goToRegistration().selectFemaleGender().enterFirstName(firstName)
@@ -52,7 +51,6 @@ public class T01_Regirstration extends BaseTest {
 
 	@Test(priority = 2, groups = { "Negative" })
 	@Description("Verify that a user cannot register if any mandatory fields are missing")
-	@Severity(SeverityLevel.CRITICAL)
 	public void testMissingFirstName_N() {
 		String ActualMessg = HomePage.goToRegistration().selectFemaleGender().enterLastName(FakeData.getLastName())
 				.selectDayOfBirth(FakeData.getDay()).selectMonthOfBirth(FakeData.getMonth())
@@ -64,7 +62,6 @@ public class T01_Regirstration extends BaseTest {
 	}
 
 	@Test(priority = 3, groups = { "Negative" })
-	@Severity(SeverityLevel.CRITICAL)
 	@Description("Verify that a user cannot register if any mandatory fields are missing")
 
 	public void testMissingEmail_N() {
@@ -79,7 +76,6 @@ public class T01_Regirstration extends BaseTest {
 	}
 
 	@Test(priority = 4, groups = { "Negative" })
-	@Severity(SeverityLevel.CRITICAL)
 	@Description("Verify that a user cannot register if the password and confirmation do not match")
 
 	public void testMisMatchingPasswords_N() {
