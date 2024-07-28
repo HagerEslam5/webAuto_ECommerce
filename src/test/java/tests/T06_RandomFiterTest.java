@@ -13,7 +13,6 @@ public class T06_RandomFiterTest extends BaseTest {
 
 	@Test(priority = 1)
 	@Description("Verify that a user can filter products by any color")
-	@Severity(SeverityLevel.NORMAL)
 
 	public void testRandomColorFilter() throws InterruptedException {
 		new HomePage(driver).HoverOnApparel();
