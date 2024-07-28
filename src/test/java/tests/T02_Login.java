@@ -45,7 +45,6 @@ public class T02_Login extends BaseTest {
 
 	@Test(priority = 1)
 	@Description("Verify that a user can log in with a valid email and password")
-	@Severity(SeverityLevel.CRITICAL)
 	public void TestLogin_P() {
 
 		P02_Login loginObj = HomePage.goToLogin();
@@ -57,7 +56,6 @@ public class T02_Login extends BaseTest {
 
 	@Test(priority = 2, groups = { "Negative" })
 	@Description("Verify that a user cannot log in with a valid email and an invalid password")
-	@Severity(SeverityLevel.CRITICAL)
 	public void TestInvalidPasswordLogin_N() {
 		P02_Login loginObj = HomePage.goToLogin();
 		loginObj.enterEmail(validEmail).enterPassword(FakeData.getPassword()).clickOnLoginBtn();
@@ -67,7 +65,6 @@ public class T02_Login extends BaseTest {
 
 	@Test(priority = 3, groups = { "Negative" })
 	@Description("Verify that a user cannot log in with a invalid email and an valid password")
-	@Severity(SeverityLevel.CRITICAL)
 	public void TestInvalidEmailLogin_N() {
 		P02_Login loginObj = HomePage.goToLogin();
 		loginObj.enterEmail(FakeData.getEmail()).enterPassword(validPass).clickOnLoginBtn();
