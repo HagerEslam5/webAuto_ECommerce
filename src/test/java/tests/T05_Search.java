@@ -14,7 +14,6 @@ public class T05_Search extends BaseTest {
 
 	@Test(priority = 1)
 	@Description("Verify that user can search for products by name")
-	@Severity(SeverityLevel.MINOR)
 	public void testSearchByProductName() {
 		boolean flag = new P05_Search(driver).searchByName(prodName).getDisplayedProds(prodName);
 		Assert.assertTrue(flag);
@@ -22,7 +21,6 @@ public class T05_Search extends BaseTest {
 
 	@Test(priority = 2)
 	@Description("Verify that a user can search for products using a partial name")
-	@Severity(SeverityLevel.MINOR)
 	public void testSearchByAutoSuggs() throws InterruptedException {
 		boolean flag = new P05_Search(driver).searchByName(prodName).searchByAutoSuggs("HTC", prodName);
 		Assert.assertTrue(flag);
