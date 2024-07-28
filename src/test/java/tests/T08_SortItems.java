@@ -14,7 +14,6 @@ public class T08_SortItems extends BaseTest {
 
 	@Test(priority = 1)
 	@Description("Verify that a user can sort products by price")
-	@Severity(SeverityLevel.MINOR)
 
 	public void sortByPriceTest() throws InterruptedException {
 		new HomePage(driver).HoverOnApparel();
