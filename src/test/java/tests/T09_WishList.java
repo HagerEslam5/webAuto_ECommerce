@@ -19,8 +19,6 @@ public class T09_WishList extends BaseTest {
 
 	@Test(priority = 1, retryAnalyzer = RetryFailures.class)
 	@Description("Verify that a user can successfully add products to their wish list")
-
-	@Severity(SeverityLevel.MINOR)
 	public void addProdToWishListTest() throws InterruptedException {
 		new P05_Search(driver).searchByName(prodName);
 		String SuccessMessg = new P10_wishList(driver).addProdToWishList().getSuccessMessg();
