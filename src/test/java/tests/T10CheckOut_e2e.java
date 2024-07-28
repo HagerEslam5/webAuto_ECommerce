@@ -74,7 +74,6 @@ public class T10CheckOut_e2e extends BaseTest {
 
 	@Test(priority = 1, retryAnalyzer = RetryFailures.class)
 	@Description("Verify that a user can complete the checkout process using the cheque payment method")
-	@Severity(SeverityLevel.CRITICAL)
 	public void chequeCheckOutTest() throws InterruptedException {
 		String orderAddress = new P13_CheckOutPaymentMethod(driver).chooseChequePaymentMethod().clickOnContinue()
 				.getOrderAddress();
@@ -86,7 +85,6 @@ public class T10CheckOut_e2e extends BaseTest {
 
 	@Test(priority = 2, retryAnalyzer = RetryFailures.class)
 	@Description("Verify that a user can complete the checkout process using the credit payment method")
-	@Severity(SeverityLevel.CRITICAL)
 	public void cerditCheckOutTest() throws InterruptedException {
 		new P13_CheckOutPaymentMethod(driver).chooseCreditPaymentMethod().clickOnContinue();
 		new P14_CheckOutPaymentInfo(driver).selectRandomCreditCard().insertCardHolderName(FakeData.getFullName())
