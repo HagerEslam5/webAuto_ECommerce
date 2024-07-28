@@ -17,7 +17,6 @@ public class T07_ShoppingCart extends BaseTest {
 
 	@Test(priority = 1, retryAnalyzer = RetryFailures.class)
 	@Description("Verify that user can add different products to the shopping cart")
-	@Severity(SeverityLevel.CRITICAL)
 
 	public void testAddProductsToShoppingCart() throws InterruptedException {
 		P07_Books books = new P07_Books(driver);
