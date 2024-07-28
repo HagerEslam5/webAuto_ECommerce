@@ -42,7 +42,6 @@ public class T03_ForgotPassword extends BaseTest {
 
 	@Test(priority = 1)
 	@Description("Verify that user can recover the password using a valid email address")
-	@Severity(SeverityLevel.CRITICAL)
 	public void TestPasswordRecovering_P() {
 		new HomePage(driver).goToLogin();
 		P03_ForgotPassword ForgotPassword = new P03_ForgotPassword(driver);
@@ -54,7 +53,6 @@ public class T03_ForgotPassword extends BaseTest {
 
 	@Test(priority = 2, groups = { "Negative" })
 	@Description("Verify that user cannot recover the password using an invalid email address")
-	@Severity(SeverityLevel.NORMAL)
 	public void TestPasswordRecovering_N() {
 		new HomePage(driver).goToLogin();
 		P03_ForgotPassword ForgotPassword = new P03_ForgotPassword(driver);
