@@ -40,11 +40,19 @@ public class P07_Books extends BasePage {
 		return titles;
 	}
 
-	public P07_Books openAllItemsInNewTabs() throws InterruptedException {
+	/*public P07_Books openAllItemsInNewTabs() throws InterruptedException {
 		List<WebElement> links = driver.findElements(this.items);
 		for (int i = 0; i < links.size(); i++) {
 			String clickOnLink = openLinkInNewTab();
 			links.get(i).sendKeys(clickOnLink);
+		}
+		return this;
+	}*/
+	//Same method after updating openLinkInNewTab method in basePage
+	public P07_Books openAllItemsInNewTabs() throws InterruptedException {
+		List<WebElement> links =driver.findElements(productTitle);
+		for (int i = 0; i < links.size(); i++) {
+			openLinkInNewTab(links.get(i).getAttribute("href"));
 		}
 		return this;
 	}
