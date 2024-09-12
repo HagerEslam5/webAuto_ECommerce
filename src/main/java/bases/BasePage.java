@@ -73,10 +73,17 @@ public class BasePage {
 		return random.nextInt(bound);
 	}
 
-	public String openLinkInNewTab() throws InterruptedException {
+	/*public String openLinkInNewTab() throws InterruptedException {
 		String clickOnLink = Keys.chord(Keys.CONTROL, Keys.ENTER);
 		Thread.sleep(1000);
 		return clickOnLink;
+	}*/
+
+	//Same method with selenium4 new feature
+		public void openLinkInNewTab(String link) throws InterruptedException {
+		WebDriver newTab = driver.switchTo().newWindow(WindowType.TAB);
+		newTab.get(link);
+		Thread.sleep(1000);
 	}
 
 	public int cleanThePrice(String priceText) {
