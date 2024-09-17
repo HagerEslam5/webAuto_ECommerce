@@ -78,6 +78,11 @@ public class BasePage {
 		Thread.sleep(1000);
 		return clickOnLink;
 	}*/
+	public String getWindowHandles(){
+		Set<String> windowIDs = driver.getWindowHandles();
+		Iterator<String> it = windowIDs.iterator();
+		return it;
+	}
 
 	//Same method with selenium4 new feature
 		public void openLinkInNewTab(String link) throws InterruptedException {
