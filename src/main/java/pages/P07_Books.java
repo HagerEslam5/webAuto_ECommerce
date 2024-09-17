@@ -50,7 +50,7 @@ public class P07_Books extends BasePage {
 	}*/
 	//Same method after updating openLinkInNewTab method in basePage
 	public P07_Books openAllItemsInNewTabs() throws InterruptedException {
-		List<WebElement> links =driver.findElements(productTitle);
+		List<WebElement> links =driver.findElements(items);
 		for (int i = 0; i < links.size(); i++) {
 			openLinkInNewTab(links.get(i).getAttribute("href"));
 		}
