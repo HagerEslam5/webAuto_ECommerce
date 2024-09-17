@@ -51,8 +51,7 @@ public class P07_Books extends BasePage {
 	//Same method after updating openLinkInNewTab method in basePage
 	public P07_Books openAllItemsInNewTabs() throws InterruptedException {
 		List<WebElement> links = driver.findElements(items);
-		Set<String> windowIDs = driver.getWindowHandles();
-		Iterator<String> it = windowIDs.iterator();
+		Iterator<String> it=getWindowHandles();
 		String mainPage = it.next();
 		for (int i = 0; i < links.size(); i++) {
 			openLinkInNewTab(links.get(i).getAttribute("href"));
@@ -62,8 +61,7 @@ public class P07_Books extends BasePage {
 	}
 
 	public int iterateToAddProductsAndGetTotal() {
-		Set<String> windowIDs = driver.getWindowHandles();
-		Iterator<String> it = windowIDs.iterator();
+		Iterator<String> it=getWindowHandles();
 		it.next();
 		int total = 0;
 		while (it.hasNext()) {
