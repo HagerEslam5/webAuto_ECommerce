@@ -78,7 +78,7 @@ public class BasePage {
 		Thread.sleep(1000);
 		return clickOnLink;
 	}*/
-	public String getWindowHandles(){
+	public Iterator<String> getWindowHandles(){
 		Set<String> windowIDs = driver.getWindowHandles();
 		Iterator<String> it = windowIDs.iterator();
 		return it;
