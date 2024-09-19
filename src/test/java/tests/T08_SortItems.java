@@ -20,13 +20,6 @@ public class T08_SortItems extends BaseTest {
 		P08_Clothing clothing = new P08_Clothing(driver);
 		List<Integer> expectedPrices = clothing.goToClothing().getPricesAndSortThem();
 		List<Integer> actualPrices = clothing.sortByPrice().getTheDisplayedPrices();
-		
-		for(int pricer:expectedPrices) {
-			System.out.println(pricer);
-		}
-		for(int pricer:actualPrices) {
-			System.out.println(pricer);
-		}
 		Assert.assertTrue(expectedPrices.equals(actualPrices));
 	}
 
